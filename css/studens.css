@@ -1,0 +1,121 @@
+/*background-color: rgba(247, 227, 255, 0.75);*/
+/*background-color: rgb(35, 36, 44);*/
+/*color: rgb(168, 122, 196);*/
+.my__students {
+    background-color: transparent;
+}
+
+.tabbed-window-list {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    animation: scaleUp 500ms ease-in-out;
+}
+
+.tabbed-window-list .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*flex-flow: column wrap;*/
+    text-align: center;
+    background: rgb(35, 36, 44);
+
+}
+
+.tabs h2 {
+    font-size: 2rem;
+    font-family: 'Gabriela', serif;
+    color: rgba(247, 227, 255, 0.96);
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*gap: 1rem;*/
+    flex: 1;
+    /*flex-wrap: wrap;*/
+    padding: 2rem;
+    max-width: 10%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.tab:focus, .tab:hover, .tab:active {
+    background-color: rgba(149, 103, 176, 0.82);
+}
+
+.tab img {
+    width: 3.2rem;
+}
+
+.wrapper section.content-pane {
+    cursor: default;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.tab-content {
+    background-color: transparent;
+    display: none;
+    animation: scaleUp 500ms ease-in-out;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*===================================================graduates=====================================*/
+.graduate__box {
+    width: 100%;
+    height: auto;
+    background-color: rgba(247, 227, 255, 0.75);
+    position: relative;
+}
+
+.graduate__box img {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.border-circle {
+    position: absolute;
+    top: -134px;
+    left: 100px;
+    width: 274px;
+    height: 274px;
+    border: 6px solid #4a3f53;
+    border-radius: 50%;
+}
+
+.graduate__box-text {
+    padding: 170px 50px 70px;
+}
+
+.graduate__box {
+    margin-top: 60px;
+    border-radius: 4px 4px 0 0;
+}
+
+.graduate__box-text p {
+    padding-top: 12px;
+}
+
+

@@ -1,0 +1,897 @@
+@media (max-width: 1200px) {
+    .header__main-circle-border {
+        right: 110px;
+    }
+
+    .about__me-img img {
+        width: 450px;
+    }
+
+    .header__main-block-2 {
+        width: 50%;
+    }
+
+    .section__margin-top {
+        margin-top: 90px;
+    }
+}
+
+/*=========================================992=================================================================*/
+@media (max-width: 992px) {
+    .wrapper-content {
+        box-shadow: none;
+    }
+
+    .about__me-img {
+        padding: 34px 0 20px 0;
+        width: 100%;
+    }
+
+    .about__me-text {
+        order: 1;
+    }
+
+    .about__me-img {
+        order: 2;
+    }
+
+    .about__me-skills .about__me-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about__me-skills {
+        flex-direction: column;
+    }
+
+    .wrapper .flex-2 .about__me-skills.flex {
+        align-items: center !important;
+    }
+
+    .header__main-circle-border {
+        right: 60px;
+    }
+
+    .header__main {
+        padding-top: 68px;
+    }
+
+    a, p {
+        font-size: 16px;
+    }
+
+
+    .header__main-block-2 {
+        width: 80%;
+    }
+
+    .header__main-block-1 h2,
+    .text-center {
+        font-size: 60px;
+    }
+
+    .about__me-img {
+        align-items: center;
+    }
+
+    .about__me-img img {
+        width: 320px;
+    }
+
+    .list__block-2 .player .list {
+        padding: 15px 4px;
+    }
+
+    .list__block-2 .player .main .controls > div {
+        margin: 3px 20px 20px 20px;
+    }
+
+    .list__block-2 .player .main .details h3 {
+        font-size: 17px;
+    }
+
+    .list__block-2 .details {
+        padding: 9px;
+    }
+
+    .list-main .list__block-1 {
+        margin: 0 20px 0 0;
+    }
+
+    .spoller__main .flex {
+        flex-direction: column;
+    }
+
+    .spoller__main {
+        width: 100%;
+    }
+
+    .spoller__main .content__text,
+    .spoller__main .content__spoller {
+        width: 100%;
+    }
+
+    #list__track .list-main {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .list-main .list__block-1,
+    .list-main .list__block-2 {
+        width: 100%;
+    }
+
+
+    nav .navbar .links li {
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
+    nav .navbar .links li a {
+        font-size: 15px;
+    }
+}
+
+/*=========================================768=================================================================*/
+@media (max-width: 768px) {
+    /*=======================menu=========================*/
+    nav .navbar .links li a {
+        justify-content: center;
+        text-align: center !important;
+
+    }
+
+    .overflow-button a {
+        background-color: #4a3f53;
+        height: 70px;
+        width: 50px;
+        border: none;
+        outline: none;
+        /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s ease-in;
+        cursor: pointer;
+    }
+
+    .overflow-button span {
+        display: inline-block;
+        background: rgba(247, 227, 255, 0.96);
+        width: 30px;
+        height: 4px;
+        margin: 3px;
+        border-radius: 3px;
+        transition: all 0.3s ease-in;
+    }
+
+    .overflow-button.myClass span:first-child {
+        transform: rotate(-44deg);
+        transition: all 0.3s ease-in;
+    }
+
+    .overflow-button.myClass span:nth-child(2) {
+        opacity: 0;
+        transition: all 0.3s ease-in;
+    }
+
+    .overflow-button.myClass span:last-child {
+        transform: rotate(-135deg);
+        transition: all 0.3s ease-in;
+    }
+
+    /*=====================================burg==========================================*/
+    nav {
+        position: relative;
+    }
+
+    .header .wrapper, .header .wrapper .header__container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header::before {
+        height: 70px;
+    }
+
+    .header .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .header__container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .bi-list {
+        display: block;
+    }
+
+
+    nav .navbar .nav-links {
+        position: fixed;
+        top: 70px;
+        padding-top: 40px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        border-top: 2px solid rgb(35, 36, 44);
+        background: rgb(241, 214, 252);
+        line-height: 40px;
+        /*padding: 20px;*/
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    .links li {
+        width: 150px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+
+    nav .navbar .links {
+        display: block;
+    }
+
+    nav .navbar .links li {
+        display: block;
+    }
+
+    nav .navbar .links li .sub-menu {
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        display: none;
+    }
+
+    nav .navbar .links li .sub-menu li {
+        border-bottom: none;
+
+    }
+
+    .navbar .links li .sub-menu .more-sub-menu {
+        display: none;
+        position: relative;
+        left: 0;
+    }
+
+    .navbar .links li .sub-menu .more-sub-menu li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links li:hover .htmlcss-arrow,
+    .links li:hover .js-arrow {
+        transition: all .7s;
+        transform: rotate(0deg);
+    }
+
+    .navbar .links li .sub-menu .more-sub-menu {
+        display: none;
+    }
+
+    .navbar .links li .sub-menu .more span {
+        /* background: red; */
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .links li .sub-menu .more:hover .more-sub-menu {
+        display: none;
+    }
+
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu {
+        display: none;
+    }
+
+    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu {
+        min-width: 200px;
+        display: block;
+        border-bottom: 1px solid rgba(35, 36, 44, 0.53);
+    }
+
+    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu li {
+        margin: 0;
+        min-width: 200px;
+
+    }
+
+    .navbar .nav-links.show3 .links .js-sub-menu li a {
+        width: 100%;
+    }
+
+    .navbar .nav-links.show1 .links .htmlcss-arrow,
+    .navbar .nav-links.show3 .links .js-arrow {
+        transform: rotate(360deg);
+    }
+
+    /*===============================================================================================*/
+    .contact-display-none a {
+        display: none !important;
+    }
+
+    *.triger {
+        overflow: hidden;
+    }
+
+    .htmlCss-sub-menu.sub-menu li {
+        min-width: 200px;
+        margin: 0;
+    }
+
+    .header__main-circle-border {
+        display: none;
+    }
+
+    .header__container h1 {
+        font-size: 28px;
+        height: 60px;
+    }
+
+    h2.text-center {
+        margin-bottom: 15px;
+    }
+
+    .header__main-block-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__main {
+        text-align: center
+    }
+
+    .header__main h2 {
+        padding: 0;
+    }
+
+    .wrapper .flex-2 .about__me-skills.flex {
+        padding-top: 0;
+    }
+
+    .about__me-skills .about__me-img {
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    .about__me-skills .about__me-text p {
+        padding: 7px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .header__main {
+        padding-top: 48px;
+    }
+
+    .header__main h2,
+    .text-center {
+        font-size: 60px;
+        /*height: 190px;*/
+    }
+
+    .header__container h2 {
+        font-size: 29px;
+        height: 29px;
+        text-align: center;
+        z-index: 10;
+        margin-right: 20px;
+        position: fixed;
+    }
+
+    .header__container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .header__main {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .header__main-block-1 {
+        width: 100%;
+    }
+
+    .header__main-photo img {
+        margin: 40px 0 30px 0;
+        width: auto;
+        height: 450px;
+    }
+
+    .header__main-block-2 {
+        margin: 60px 0 10px;
+        width: 100%;
+    }
+
+    .header__main-photo-2 {
+        display: none;
+    }
+
+    .header__main-circle-border {
+        margin-top: 70px;
+        width: 390px;
+        height: 390px;
+        top: -70px;
+        right: 40px;
+        transform: rotate(220deg);
+    }
+
+    /*====================================*/
+    .about__me-skills,
+    .about__me-skills-2 {
+        flex-direction: column;
+    }
+
+    .skills__box {
+        margin-bottom: 40px;
+    }
+
+    .about__me-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about__me-img img {
+        width: inherit;
+    }
+
+
+    /*===============================list__track-page=============================================*/
+    .list__box {
+        flex-direction: column;
+    }
+
+
+    .section__margin-top .my__students {
+        flex-direction: column;
+    }
+
+    .section__margin-top {
+        margin-top: 50px;
+    }
+
+    .my__students-block-1,
+    .my__students-block-2 {
+        width: 100%;
+    }
+
+    .my__students-box {
+        margin: 0 auto 40px;
+    }
+
+    .my__students-block-2 {
+        margin-top: 0;
+    }
+
+    .header__main-block-1 h2,
+    .text-center {
+        font-size: 65px;
+        /*height: 80px;*/
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .wrapper a, p {
+        font-size: 16px;
+    }
+
+    .about__me-text p {
+        padding: 20px 0;
+    }
+
+    .list__block-2 .player .main .details h3 {
+        font-size: 23px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .motto,
+    .footer .contacts {
+        width: 70%;
+    }
+
+    .footer .motto h2,
+    .footer .contacts h2 {
+        margin-bottom: 15px;
+    }
+
+    .contacts {
+        margin-top: 20px;
+    }
+
+    .motto p {
+        padding-bottom: 10px;
+    }
+
+    .box-shadow {
+        box-shadow: rgba(74, 63, 83, 0.4) 0 1px 3px;
+    }
+
+    .list-main .list__block-2 {
+        order: 1;
+    }
+
+    .list-main .list__block-1 {
+        order: 2;
+    }
+
+    .accompanists-title {
+        width: 60%;
+    }
+
+    .accompanists__box-img {
+        overflow-y: hidden;
+    }
+
+    .accompanists__box .accompanists-title,
+    .metod__block .accompanists__box-img img {
+        width: 400px;
+
+    }
+
+    .metod__block .accompanists__box-img img,
+    .accompanists__box .accompanists-title,
+    .metod__block .accompanists__box-img {
+        margin: 0 auto;
+    }
+
+    .metod__block .accompanists__box-img img {
+        margin-right: 0;
+    }
+
+    .accompanists__box .accompanists-title {
+        text-align: center;
+    }
+
+    .metod__block .accompanists__box {
+        flex-direction: column;
+    }
+
+    .flex-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-2 .about__me-skills {
+        order: 1;
+    }
+
+    .flex-2 .about__me-skills-2 {
+        order: -2;
+    }
+
+    .flex-2 .order-3 {
+        order: 4;
+    }
+
+    .my__students-show-more h2 {
+        min-width: 220px;
+        font-size: 24px;
+    }
+
+    .border-left {
+        width: 29%;
+    }
+
+    .border-right {
+        width: 29%;
+    }
+
+    .my__students-show-more {
+        margin-bottom: 40px;
+    }
+
+    /*===============================students==============================================*/
+    .tabbed-window-list .content-pane {
+        padding: 0;
+    }
+
+    .tabbed-window-list {
+        grid-template-columns: auto;
+        width: auto;
+    }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        border-right: 0;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    }
+
+    .tab {
+        justify-content: center;
+    }
+
+    .graduate__box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .border-circle {
+        top: -94px;
+        left: 50px;
+        width: 174px;
+        height: 174px;
+        border-radius: 50%;
+    }
+
+    .graduate__box-text {
+        padding: 90px 30px 50px;
+    }
+
+    .graduate__box {
+        margin-top: 100px;
+    }
+
+    .graduate__box h2 {
+        margin-top: 30px;
+    }
+
+    .graduate__box-text p a i {
+        display: block;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+/*=========================================576=================================================================*/
+@media (max-width: 576px) {
+
+
+    .my__students-show-more h2 {
+        min-width: 150px;
+        font-size: 20px;
+    }
+
+    .border-left {
+        width: 25%;
+    }
+
+    .border-right {
+        width: 25%;
+    }
+
+    .block__title .list__box-align-title h2 {
+        font-size: 16px;
+        padding-right: 17px;
+    }
+
+    .header__main h2 {
+        padding: 15px;
+    }
+
+    .about__me-text h2 {
+        text-align: center;
+    }
+
+    .header__main-block-1 {
+        text-align: center;
+    }
+
+    .btn-mini {
+        margin: 20px auto;
+    }
+
+    .header__main-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .header__main-circle-border {
+        margin-top: 100px;
+        width: 320px;
+        height: 320px;
+        top: -100px;
+        right: -20px;
+        transform: rotate(220deg);
+    }
+
+    .header__main-circle {
+        width: 206px;
+        height: 206px;
+    }
+
+
+    /*===============================list__track-page=============================================*/
+    .list__box-block {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .page #list__track {
+        margin-top: 20px;
+    }
+
+    #list__track .list-main {
+        width: 100%;
+    }
+
+    .header__main-block-1 h2,
+    .text-center {
+        color: #4a3f53;
+        font-size: 40px;
+        line-height: 60px;
+        margin: 40px 0 20px;
+    }
+
+    h2 {
+        color: #4a3f53;
+        font-size: 32px;
+        font-weight: 900;
+        font-family: 'Bad Script', cursive;
+        letter-spacing: 0.02em;
+    }
+
+
+    .section__margin-top {
+        margin-top: 0;
+    }
+
+    .text-center {
+        padding: 20px 0;
+    }
+
+    .skills__box p {
+        padding-top: 20px;
+    }
+
+    .about__me-skills,
+    .about__me-skills-2 {
+        margin: 30px 0 0 0;
+    }
+
+    .footer .motto,
+    .footer .contacts {
+        width: 100%;
+    }
+
+    .accompanists__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accompanists__box-img {
+        padding-bottom: 10px;
+    }
+
+    .list__block-1 {
+        padding-bottom: 60px;
+    }
+
+    .accompanists {
+        /* display: flex;*/
+        /*!*align-items: center;*!*/
+        /* justify-content: center;*/
+    }
+
+    .accompanists__box .accompanists-title,
+    .metod__block .accompanists__box-img img {
+        width: 300px;
+    }
+
+    .tabbed-window-list {
+        margin-bottom: 40px;
+    }
+
+    .graduate__box-text {
+        padding: 70px 14px 20px;
+    }
+
+    .graduate__box h2 {
+        margin-top: 12px;
+    }
+
+    .graduate__box img {
+        width: 126px;
+        height: 126px;
+    }
+
+    .border-circle {
+        top: -74px;
+        left: 25px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
+/*=========================================459=================================================================*/
+@media (max-width: 459px) {
+    .header__container h1 {
+        font-size: 22px;
+        height: 50px;
+    }
+
+    .my__students-show-more h2 {
+        min-width: 110px;
+        font-size: 17px;
+    }
+
+    .my__students-box h2 {
+        padding: 5px 0 0 0;
+    }
+
+    .my__students-box p {
+        padding-bottom: 20px;
+    }
+
+    body .wrapper {
+        padding: 0 9px;
+    }
+
+    .header__main h2 {
+        margin-bottom: 20px;
+    }
+
+    .accompanists__box .accompanists-title,
+    .metod__block .accompanists__box-img img {
+        width: 250px;
+    }
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .tabs img {
+        width: 2.4rem;
+    }
+
+    .tabs h2 {
+        font-size: 1.6rem;
+    }
+
+    .tab {
+        padding: 1rem;
+    }
+
+    .content-pane {
+        padding: 2rem;
+    }
+}
+
+/*========================================370=================================================================*/
+@media (max-width: 370px) {
+
+    body {
+        min-width: 320px;
+        overflow-x: visible;
+    }
+
+    nav .navbar .nav-links {
+        max-width: 100%;
+    }
+}
