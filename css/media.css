@@ -135,6 +135,10 @@
 
 /*=========================================768=================================================================*/
 @media (max-width: 768px) {
+    .list__block-2 .player .player-list {
+        height: 420px;
+        overflow-y: scroll;
+    }
     /*=======================menu=========================*/
     nav .navbar .links li a {
         justify-content: center;
@@ -405,6 +409,7 @@
     .header__container {
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
 
@@ -661,6 +666,16 @@
         padding-right: 0;
         text-align: center;
     }
+    .wrapper .header__container {
+
+        display: flex;
+        justify-content: space-between !important;
+        align-items: flex-end !important;
+    }
+    .wrapper .header__container h1{
+        font-size: 24px;
+        height: 52px;
+    }
 }
 
 /*=========================================576=================================================================*/
@@ -827,18 +842,17 @@
 
 /*=========================================459=================================================================*/
 @media (max-width: 459px) {
-    .header__container h1 {
-        font-size: 22px;
-        height: 50px;
-    }
 
     .my__students-show-more h2 {
         min-width: 110px;
         font-size: 17px;
     }
-
-    .my__students-box h2 {
-        padding: 5px 0 0 0;
+    h2 {
+        color: #4a3f53;
+        font-size: 26px;
+    }
+    body .wrapper a, p {
+        font-size: 15px;
     }
 
     .my__students-box p {

@@ -258,12 +258,14 @@ h2 {
     text-transform: uppercase;
     font-family: 'Bad Script', cursive;
     letter-spacing: 5px;
-    height: 70px;
+    height: 50px;
     font-size: 38px;
     padding: 7px 0;
     overflow-y: hidden;
 }
-
+p{
+    line-height: 22px;
+}
 body .wrapper a, p {
     color: #654c7f;
     font-size: 17px;
@@ -325,8 +327,37 @@ body .wrapper a, p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     overflow-y: hidden;
+    border-radius: 23px;
 }
+.btn-mini-size::before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 52px;
+    height: 100%;
+    /*background-color: #1af1cf;*/
+    background-color: #fff;
+    top: 0;
+    left: -400px;
+    transform: skew(-30deg);
+    filter: blur(17px);
+    animation: blick 4s  infinite linear;
+
+    /*cubic-bezier(1,1, 0,0)*/
+}
+@keyframes blick {
+    from{
+        left: -400px;
+    }
+    to{
+        left: 125%;
+    }
+
+}
+
 
 .btn-mini:hover {
     border: 1px solid #9a6fc8;
@@ -425,7 +456,9 @@ nav .navbar .links li:hover .js-sub-menu {
 .navbar .nav-links .sidebar-logo {
     display: none;
 }
-
+.navbar .nav-links{
+    padding-bottom: 6px;
+}
 .navbar .bi-list {
     display: none;
 }
@@ -603,13 +636,13 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .my__students h2 {
-    padding: 30px 0 10px 0;
+    padding: 40px 0 10px 0;
 }
 
-.my__students p {
+.my__students .my__students-box p {
     margin: 0 auto;
     width: 80%;
-    padding-bottom: 40px;
+    padding: 5px 0  50px;
 }
 
 .my__students-box img {
@@ -780,8 +813,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .player .player-list {
-    height: 541px;
-    overflow-y: scroll;
+    height: auto;
     background-color: rgba(247, 227, 255, 0.75);
     transition: all 500ms ease-in-out;
     border-radius: 0 0 2px 2px;
@@ -940,6 +972,9 @@ footer {
 .accompanists {
     width: 100%;
     margin-top: 40px;
+}
+.accompanists__box h2{
+    padding-top: 8px;
 }
 
 .accompanists__box {
